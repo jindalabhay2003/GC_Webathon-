@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>ERP | Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <div class="container bootstrap snippets bootdey">
+      <%- include('./include/appBar.ejs')%>
+            <div class="panel-body bio-graph-info">
+              <h1>Bio Data</h1>
+              <div class="row">
+                <div class="bio-row">
+                  <p><span>Name </span>: <%=user.name%></p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Hostel </span>: <%=user.hostel%></p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Roll No</span>: <%=user.rollNo%></p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Branch</span>: <%=user.branch%></p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Mobile</span>: <%=user.phoneNo%></p>
+                </div>
+                <div class="bio-row">
+                  <p><span>Room No </span>: <%=user.roomNo%></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <%- include('./include/end.ejs')%> 
+   
+  </body>
+</html>

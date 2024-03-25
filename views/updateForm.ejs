@@ -1,0 +1,69 @@
+<%- include('./include/head.ejs')%>
+    <title>ERP | Update User</title>
+</head>
+
+<body>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <div class="container bootstrap snippets bootdey">
+        <div class="row">
+            <div class="profile-nav col-md-3">
+              <div class="panel">
+                <div class="user-heading round">
+                  <a href="#" > <img src="<%-user.image%>" alt="user image" /> </a>
+                  <h1>
+                    <%=user.name%>
+                  </h1>
+                  <p>
+                    <%=user.mailId%>
+                  </p>
+                </div>
+        
+                <ul class="nav nav-pills nav-stacked">
+                  <li>
+                    <a href="/user/profile-page">
+                      <i class="fa fa-user"></i> Profile</a>
+                  </li>
+                  <li><a href="/user/update-form"> <i class="fa fa-edit"></i> Update Account</a></li>
+                  <li>
+                    <a href="/logout"> <i class="fa fa-edit"></i> Log Out</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+            <div class="profile-info col-md-9">
+              <div class="panel">
+                <div class="bio-graph-heading">WELCOME TO ERP SYSTEM</div>
+    </div>
+
+    </div>
+    <div>
+        <div class="row">
+            <form action="/user/updateMe" method="POST">
+                <label for="rollNo">Roll Number:</label><br>
+                <input type="text" id="rollNo" name="rollNo" value=<%=user.rollNo%>><br>
+                <label for=" roomNo">Room Number:</label><br>
+                <input type="text" id="roomNo" name="roomNo" value=<%=user.roomNo%>><br>
+                <label for=" branch">Branch:</label><br>
+                <input type="text" id="branch" name="branch" value=<%=user.branch%>><br>
+                <label for=" hostel">Hostel:</label><br>
+                <input type="text" id="hostel" name="hostel" value=<%=user.hostel%>><br>
+                <label for=" phoneNo">Phone Number:</label><br>
+                <input type="number" id="phoneNo" name="phoneNo" value=<%=user.phoneNo%>><br>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <%- include('./include/end.ejs')%>
+
+        <script type="text/javascript">
+
+        </script>
+</body>
+
+</html>
